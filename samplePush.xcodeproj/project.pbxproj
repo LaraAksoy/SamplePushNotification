@@ -6,8 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B794A3B22EEE1BB80015CFC3 /* samplePushNotification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B794A3AB2EEE1BB80015CFC3 /* samplePushNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B794A3DE2EEE214B0015CFC3 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = B794A3DD2EEE214B0015CFC3 /* FirebaseCore */; };
+		B794A3E02EEE21530015CFC3 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B794A3DF2EEE21530015CFC3 /* FirebaseRemoteConfig */; };
+		B794A3E22EEE215B0015CFC3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B794A3E12EEE215B0015CFC3 /* FirebaseMessaging */; };
+		B794A3E62EEE23180015CFC3 /* Pro-Notific-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B794A3E52EEE23180015CFC3 /* Pro-Notific-sound.mp3 */; };
+		B794A3E72EEE23180015CFC3 /* Pro-Notific-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B794A3E52EEE23180015CFC3 /* Pro-Notific-sound.mp3 */; };
+		B794A3E92EEE252F0015CFC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B794A3E82EEE252F0015CFC3 /* GoogleService-Info.plist */; };
+		B794A3EA2EEE252F0015CFC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B794A3E82EEE252F0015CFC3 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B794A3B02EEE1BB80015CFC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B794A3762EEE19C90015CFC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B794A3AA2EEE1BB80015CFC3;
+			remoteInfo = samplePushNotification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B794A3B72EEE1BB80015CFC3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B794A3B22EEE1BB80015CFC3 /* samplePushNotification.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B794A37E2EEE19C90015CFC3 /* samplePush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samplePush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B794A3AB2EEE1BB80015CFC3 /* samplePushNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = samplePushNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B794A3E52EEE23180015CFC3 /* Pro-Notific-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pro-Notific-sound.mp3"; sourceTree = "<group>"; };
+		B794A3E82EEE252F0015CFC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +55,13 @@
 				Info.plist,
 			);
 			target = B794A37D2EEE19C90015CFC3 /* samplePush */;
+		};
+		B794A3B62EEE1BB80015CFC3 /* Exceptions for "samplePushNotification" folder in "samplePushNotification" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B794A3AA2EEE1BB80015CFC3 /* samplePushNotification */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,10 +74,28 @@
 			path = samplePush;
 			sourceTree = "<group>";
 		};
+		B794A3AC2EEE1BB80015CFC3 /* samplePushNotification */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B794A3B62EEE1BB80015CFC3 /* Exceptions for "samplePushNotification" folder in "samplePushNotification" target */,
+			);
+			path = samplePushNotification;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B794A37B2EEE19C90015CFC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B794A3E22EEE215B0015CFC3 /* FirebaseMessaging in Frameworks */,
+				B794A3DE2EEE214B0015CFC3 /* FirebaseCore in Frameworks */,
+				B794A3E02EEE21530015CFC3 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794A3A82EEE1BB80015CFC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,7 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				B794A3802EEE19C90015CFC3 /* samplePush */,
+				B794A3AC2EEE1BB80015CFC3 /* samplePushNotification */,
+				B794A3B92EEE1F630015CFC3 /* Frameworks */,
 				B794A37F2EEE19C90015CFC3 /* Products */,
+				B794A3E52EEE23180015CFC3 /* Pro-Notific-sound.mp3 */,
+				B794A3E82EEE252F0015CFC3 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +121,16 @@
 			isa = PBXGroup;
 			children = (
 				B794A37E2EEE19C90015CFC3 /* samplePush.app */,
+				B794A3AB2EEE1BB80015CFC3 /* samplePushNotification.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B794A3B92EEE1F630015CFC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,20 +143,47 @@
 				B794A37A2EEE19C90015CFC3 /* Sources */,
 				B794A37B2EEE19C90015CFC3 /* Frameworks */,
 				B794A37C2EEE19C90015CFC3 /* Resources */,
+				B794A3B72EEE1BB80015CFC3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B794A3B12EEE1BB80015CFC3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B794A3802EEE19C90015CFC3 /* samplePush */,
 			);
 			name = samplePush;
 			packageProductDependencies = (
+				B794A3DD2EEE214B0015CFC3 /* FirebaseCore */,
+				B794A3DF2EEE21530015CFC3 /* FirebaseRemoteConfig */,
+				B794A3E12EEE215B0015CFC3 /* FirebaseMessaging */,
 			);
 			productName = samplePush;
 			productReference = B794A37E2EEE19C90015CFC3 /* samplePush.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B794A3AA2EEE1BB80015CFC3 /* samplePushNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B794A3B32EEE1BB80015CFC3 /* Build configuration list for PBXNativeTarget "samplePushNotification" */;
+			buildPhases = (
+				B794A3A72EEE1BB80015CFC3 /* Sources */,
+				B794A3A82EEE1BB80015CFC3 /* Frameworks */,
+				B794A3A92EEE1BB80015CFC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B794A3AC2EEE1BB80015CFC3 /* samplePushNotification */,
+			);
+			name = samplePushNotification;
+			packageProductDependencies = (
+			);
+			productName = samplePushNotification;
+			productReference = B794A3AB2EEE1BB80015CFC3 /* samplePushNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +198,9 @@
 					B794A37D2EEE19C90015CFC3 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
+					B794A3AA2EEE1BB80015CFC3 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 				};
 			};
 			buildConfigurationList = B794A3792EEE19C90015CFC3 /* Build configuration list for PBXProject "samplePush" */;
@@ -107,12 +212,16 @@
 			);
 			mainGroup = B794A3752EEE19C90015CFC3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B794A3DC2EEE21350015CFC3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B794A37F2EEE19C90015CFC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B794A37D2EEE19C90015CFC3 /* samplePush */,
+				B794A3AA2EEE1BB80015CFC3 /* samplePushNotification */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +231,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B794A3E92EEE252F0015CFC3 /* GoogleService-Info.plist in Resources */,
+				B794A3E62EEE23180015CFC3 /* Pro-Notific-sound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B794A3A92EEE1BB80015CFC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B794A3E72EEE23180015CFC3 /* Pro-Notific-sound.mp3 in Resources */,
+				B794A3EA2EEE252F0015CFC3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +255,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B794A3A72EEE1BB80015CFC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B794A3B12EEE1BB80015CFC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B794A3AA2EEE1BB80015CFC3 /* samplePushNotification */;
+			targetProxy = B794A3B02EEE1BB80015CFC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B794A3922EEE19CA0015CFC3 /* Debug */ = {
@@ -143,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = samplePush/samplePush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 47RUA498PY;
@@ -175,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = samplePush/samplePush.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 47RUA498PY;
@@ -323,6 +460,64 @@
 			};
 			name = Release;
 		};
+		B794A3B42EEE1BB80015CFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = samplePushNotification/samplePushNotification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47RUA498PY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = samplePushNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = samplePushNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lara.samplePush.samplePush.samplePushNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B794A3B52EEE1BB80015CFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = samplePushNotification/samplePushNotification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47RUA498PY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = samplePushNotification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = samplePushNotification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lara.samplePush.samplePush.samplePushNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,7 +539,45 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B794A3B32EEE1BB80015CFC3 /* Build configuration list for PBXNativeTarget "samplePushNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B794A3B42EEE1BB80015CFC3 /* Debug */,
+				B794A3B52EEE1BB80015CFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B794A3DC2EEE21350015CFC3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B794A3DD2EEE214B0015CFC3 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B794A3DC2EEE21350015CFC3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		B794A3DF2EEE21530015CFC3 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B794A3DC2EEE21350015CFC3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		B794A3E12EEE215B0015CFC3 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B794A3DC2EEE21350015CFC3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B794A3762EEE19C90015CFC3 /* Project object */;
 }
