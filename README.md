@@ -1,6 +1,6 @@
-# samplePush
+# SamplePushNotification
 
-**samplePush** is a robust iOS sample application demonstrating advanced Push Notification handling using **Firebase Cloud Messaging (FCM)**. This project highlights best practices for managing notification settings, handling custom notification sounds, and utilizing **Notification Service Extensions** to modify payload content before delivery.
+**SamplePushNotification** is a robust iOS sample application demonstrating advanced Push Notification handling using **Firebase Cloud Messaging (FCM)**. This project highlights best practices for managing notification settings, handling custom notification sounds, and utilizing **Notification Service Extensions** to modify payload content before delivery.
 
 ## 🚀 Features
 
